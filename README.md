@@ -112,10 +112,38 @@
         console.log(x, y);  
       }  
       foo() // undefined 5  
-    如果不太明确请参见：http://es6.ruanyifeng.com/#docs/function 第6章的函数扩展
-    
-  ##参数默认值的位置  
+   `* 如果不太明确请参见：http://es6.ruanyifeng.com/#docs/function 第6章的函数扩展`  
+  
+  ## 参数默认值的位置  
     `* 通常函数参数的默认值一般都写在最后一个参数（方便知道省略那几个参数），如果写在前边则所有的参数都不能省略`  
+    function f(x = 1, y) {  
+      return [x, y];  
+    }  
+    f() // [1, undefined]  
+    f(2) // [2, undefined])  
+    f(, 1) // 报错  
+    f(undefined, 1) // [1, 1]  
+
+    // 例二  
+    function f(x, y = 5, z) {  
+      return [x, y, z];  
+    }  
+    f() // [undefined, 5, undefined]  
+    f(1) // [1, 5, undefined]  
+    f(1, ,2) // 报错  
+    f(1, undefined, 2) // [1, 5, 2]  
+    `* 注：1）上面代码中，有默认值的参数都不是尾参数。这时，无法只省略该参数，而不省略它后面的参数，除非显式输入undefined。
+           2）如果传入undefined，将触发该参数等于默认值，null则无效`  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 # Header 1
 ## Header 2
