@@ -1,4 +1,4 @@
-## ES6比较常用的方法
+# ES6比较常用的方法
   ## includes()、startsith()、endsWith()  
   以上方法与JavaScript中的indexOf相似，但以上方法返回的布尔值(并且查找的时候区分大小写)。  
   eg：  
@@ -71,9 +71,9 @@
     Math.hypot(3,4,5) //9+16+25=50  7.0710678118654755  
   注：无论多少个参数，只要参数中出现不是数值的字符串（“sfs”），一律返回NAN,如果是数值字符串（“5”）会自动转化成数值在计算。  
 
-### 函数、数值、对象的扩展
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# 函数、数值、对象的扩展
+  
+  
 
 ```markdown
 Syntax highlighted code block
