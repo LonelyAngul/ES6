@@ -98,8 +98,25 @@
           // ...  
         }  
         // SyntaxError: Duplicate parameter name not allowed in this context  
-
-
+  ## 与解构赋值默认值结合使用
+    function foo({x, y = 5}) {//只有对象的解构赋值  
+      console.log(x, y);  
+    }  
+    foo({}) // undefined 5  
+    foo({x: 1}) // 1 5  
+    foo({x: 1, y: 2}) // 1 2  
+    foo() // TypeError: Cannot read property 'x' of undefined  
+    
+    //解构赋值与默认值结合  
+      function foo({x, y = 5} = {}) {  
+        console.log(x, y);  
+      }  
+      foo() // undefined 5  
+    如果不太明确请参见：http://es6.ruanyifeng.com/#docs/function 第6章的函数扩展
+    
+  ##参数默认值的位置
+    `* 通常函数参数的默认值一般都写在最后一个参数（方便知道省略那几个参数），如果写在前边则所有的参数都不能省略`
+    
 # Header 1
 ## Header 2
 ### Header 3
