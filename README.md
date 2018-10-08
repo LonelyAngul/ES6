@@ -73,21 +73,19 @@
 
 # 函数、数值、对象的扩展
   ##ES6允许函数的参数设置默认值，可以直接在在参数定义的后面直接赋值  
-  eg：function log(x, y = 'World') {
-        console.log(x, y);
-      }
-
+  eg：function log(x, y = 'World') {  
+        console.log(x, y);  
+      }  
       log('Hello') // Hello World
       log('Hello', 'China') // Hello China
       log('Hello', '') // Hello
    或：  
-      function Point(x = 0, y = 0) {
-        this.x = x;
-        this.y = y;
-      }
-
-      const p = new Point();
-      p // { x: 0, y: 0 }
+      function Point(x = 0, y = 0) {  
+        this.x = x;  
+        this.y = y;  
+      }  
+      const p = new Point();  
+      p // { x: 0, y: 0 }  
   `注：由于函数的参数使用了默认赋值，不允许在函数内部在进行二次定义，都在报错。`  
 
 ```markdown
