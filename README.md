@@ -39,7 +39,7 @@
   
   Math.trunc(-2.1) //2  
   Math.trunc(-2.8) //2  
-  `*注：如果参数是字符串、空、undefined等等一律返回NAN`  
+  `* 注：如果参数是字符串、空、undefined等等一律返回NAN`  
 
 ## Math.sign()  
   `该方法用来判断一个数是正数、负数、零。  
@@ -54,13 +54,13 @@
   `计算一个数的立方根`  
   Math.cbrt(8) //2  
   Math.cbrt(-8) //-2  
-  `*注：如果参数是字符串、空、undefined等等一律返回NAN`  
+  `* 注：如果参数是字符串、空、undefined等等一律返回NAN`  
   
 ## Math.imul()  
   该方法返回一个乘积（并且是32位的，包含符号）  
   Math.imul(2,6) //12  
   Math.imul(-2,6) //-12  
-  `*注：如果输入的是小数无论正负都向下取整（Math.floor()）`  
+  `* 注：如果输入的是小数无论正负都向下取整（Math.floor()）`  
   Math.imul(2,6.5) //12  
   Math.imul(0.2,6)  //0  
 
@@ -69,29 +69,35 @@
   eg:  
     Math.hypot(3,4) //9+16=25  5  
     Math.hypot(3,4,5) //9+16+25=50  7.0710678118654755  
- ` *注：无论多少个参数，只要参数中出现不是数值的字符串（“sfs”），一律返回NAN,如果是数值字符串（“5”）会自动转化成数值在计算。`  
+ ` * 注：无论多少个参数，只要参数中出现不是数值的字符串（“sfs”），一律返回NAN,如果是数值字符串（“5”）会自动转化成数值在计算。`  
 
 # 函数、数值、对象的扩展
   ##ES6允许函数的参数设置默认值，可以直接在在参数定义的后面直接赋值  
   eg：function log(x, y = 'World') {  
-        console.log(x, y);  
+          console.log(x, y);  
       }  
-      log('Hello') // Hello World
-      log('Hello', 'China') // Hello China
-      log('Hello', '') // Hello
+      log('Hello') // Hello World  
+      log('Hello', 'China') // Hello China  
+      log('Hello', '') // Hello  
    或：  
       function Point(x = 0, y = 0) {  
-        this.x = x;  
-        this.y = y;  
+          this.x = x;  
+          this.y = y;  
       }  
       const p = new Point();  
       p // { x: 0, y: 0 }  
-  `注：由于函数的参数使用了默认赋值，不允许在函数内部在进行二次定义，都在报错。`  
-
-```markdown
-Syntax highlighted code block
-士大夫撒放
-===
+  `* 注：1）由于函数的参数使用了默认赋值，不允许在函数内部在进行二次定义，否则都报错。
+         2）在使用参数默认值的时候，函数的参数名不能相同`  
+   eg：  
+        // 不报错  
+        function foo(x, x, y) {  
+          // ...  
+        }  
+        // 报错  
+        function foo(x, x, y = 1) {  
+          // ...  
+        }  
+        // SyntaxError: Duplicate parameter name not allowed in this context  
 
 
 # Header 1
