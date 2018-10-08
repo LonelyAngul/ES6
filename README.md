@@ -1,8 +1,15 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/LonelyAngul/ES6/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## includes()、startsith()、endsWith()
+```markdown
+以上方法与JavaScript中的indexOf相似，但以上方法返回的布尔值(并且查找的时候区分大小写)。
+  eg:
+    let t="Welcome ES6";
+    t.includes("ES") //true 表示是否在字符串“t”中找到字符串“ES”
+    t.startsidth("W") //true 表示查找的字符串是否在“t”的头部
+    t.endsWidth("6")  //true 表示查找的字符串是否在“t” 的尾部。
+ 
+  当然以上三个方法也支持第二个参数，前两个方法加上第二个参数都表示从n个索引位置开始查找
+      eg：includes("ES,n) / startsith("W",n)
+          endsWith("6",9) 表示字符串6之前都有9个字符
 
 ### Markdown
 
