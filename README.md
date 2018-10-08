@@ -1,7 +1,7 @@
 ## ES6比较常用的方法
   ## includes()、startsith()、endsWith()  
   以上方法与JavaScript中的indexOf相似，但以上方法返回的布尔值(并且查找的时候区分大小写)。  
-  eg  
+  eg：  
     let t="Welcome ES6"    
     t.includes("ES") //true 表示是否在字符串“t”中找到字符串“ES”  
     t.startsidth("W") //true 表示查找的字符串是否在“t”的头部  
@@ -44,7 +44,6 @@
 ## Math.sign()  
   该方法用来判断一个数是正数、负数、零。  
   返回值：正数（+1）、负数（-1）、【0（0） / -0(-0)】、其他一律返回NAN  
-  
   Math.sign(-5) // -1  
   Math.sign(5) // +1  
   Math.sign(0) // +0  
@@ -72,7 +71,7 @@
     Math.hypot(3,4,5) //9+16+25=50  7.0710678118654755  
   注：无论多少个参数，只要参数中出现不是数值的字符串（“sfs”），一律返回NAN,如果是数值字符串（“5”）会自动转化成数值在计算。  
 
-### Markdown
+### 函数、数值、对象的扩展
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
