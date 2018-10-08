@@ -11,34 +11,17 @@
       eg：includes("ES,n) / startsith("W",n)
           endsWith("6",9) 表示字符串6之前都有9个字符
 
-### Markdown
+## repeat()
+  该方法返回一个新的字符串，并且重复了n次该字符串（不能为负数否则会报错）
+  's'.repeat(2) //"ss"
+  's'.repeat(0) //""
+  's'.repeat(0.5) //"" 正数都会向下取整，负数如果小于0到-1之间会报错
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+##padStart()、padEnd()
+  表示根据第一个参数，自动补全字符串的长度
+    's'.padStart(2,'k') //"ks" 在字符串s头部补全
+    's'.padEnd(2,k) //"sk"  在字符串s尾部补全
+  如果省略第二个参数表示自动补全“空格”
+     's'.padStart(5) //"    s"
+     
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/LonelyAngul/ES6/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
