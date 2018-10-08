@@ -1,5 +1,6 @@
-## includes()、startsith()、endsWith()
+#ES6比较常用的各种方法
 ```markdown
+## includes()、startsith()、endsWith()
 以上方法与JavaScript中的indexOf相似，但以上方法返回的布尔值(并且查找的时候区分大小写)。
   eg:
     let t="Welcome ES6";
