@@ -1,6 +1,5 @@
-#ES6比较常用的各种方法
-```markdown
-## includes()、startsith()、endsWith()
+## ES6比较常用的方法
+  ## includes()、startsith()、endsWith()
 以上方法与JavaScript中的indexOf相似，但以上方法返回的布尔值(并且查找的时候区分大小写)。
   eg:
     let t="Welcome ES6";
@@ -72,6 +71,36 @@
     Math.hypot(3,4) //9+16=25  5
     Math.hypot(3,4,5) //9+16+25=50  7.0710678118654755
   注：无论多少个参数，只要参数中出现不是数值的字符串（“sfs”），一律返回NAN,如果是数值字符串（“5”）会自动转化成数值在计算。
-  
-# 函数扩展
-  ```markdown
+
+### Markdown
+
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
+
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+### Jekyll Themes
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/LonelyAngul/-/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
