@@ -153,28 +153,33 @@
       
       bar(); //outer  
    
-   ## 箭头函数（=>）  
+   ## 箭头函数（=>） 
+      并且
       eg：var g=s=>v;  
           //等同于  
           var g=function(s){  
               return v;  
           }  
           
-       ### 如果箭头函数不需要参数或多个参数，就使用一个圆括号代表参数部分。  
-           var f=()=>5;  
-           //等同于
-           var f=function(){return 5 };  
-           
-           var sum=(num1,num2)=>num1+num2;  
-           //等同于
-           var sum=function(num1,num2){  
-              return num1+num2;  
-           }  
+   ### 如果箭头函数不需要参数或多个参数，就使用一个圆括号代表参数部分。  
+       var f=()=>5;  
+       //等同于
+       var f=function(){return 5 };  
+
+       var sum=(num1,num2)=>num1+num2;  
+       //等同于
+       var sum=function(num1,num2){  
+          return num1+num2;  
+       }  
     
-    
-    
-    
-    
+   ### 如果箭头函数的代码块部分多于一条语句，就要使用大括号将它们括起来，并且使用return语句返回。  
+       var sum=(num1,num2)=>({return num1+num2});  
+        `* 注：- 由于花括号【{}】表示一个代码块，所以使用箭头函数的时候返回的是一个对象，必须加上圆括号【（）】，否则报错。
+               - 函数内部的this永远指向它所在的环境（在哪里就指向哪里）。  
+               - 箭头函数的this不能用call()或者apply()进行绑定`  
+               
+   ### 双冒号运算符(::)
+       
     
 # 数组扩展
 # 对象扩展
