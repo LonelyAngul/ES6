@@ -193,7 +193,5 @@
 2. List
 
 **Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
+# 由于时间有点紧张，后续正在更新请稍后....
 
